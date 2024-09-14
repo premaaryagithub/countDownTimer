@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    
+    <title>
+        COUNTDOWN TIMER
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Kalnia+Glaze:wght@100..700&display=swap" rel="stylesheet">
+    <meta  name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="timer.css">
+  
+    </head>
+    <body>
+    <div class="initial-page custom  ">
+        <h3>Welcome To  A Friendly Timer!!!</h3>
+            <button class="start btn   " onclick="start()">start</button>
+    </div>
+        <div class="timer-page  custom hide ">
+          
+          
+        </div>
+        <div class="addtimer hide">
+            Add
+            </div>
+    
+            <div class="show-time-page  custom  hide ">
+              <img  class="back "  src="back.png" onclick="Back()"></img>
+                <div class="countdown-time custom   ">
+                       <div class="circle" style="--clr: #1eb9ff;">
+                          <svg>
+                              <circle cx="70" cy="70" r="70" id="td"></circle>
+                           </svg>
+                             <div id="days">00<br><span>Days</span></div>
+                       </div>
+                       <div class="circle" style="--clr: #ff2972;">
+                           <svg>
+                                <circle cx="70" cy="70" r="70" id="th"></circle>
+                            </svg>
+                           <div id="hours">00<br><span>Hours</span></div>
+                       </div>
+                       <div class="circle" style="--clr: #fee800;">
+                            <svg>
+                                <circle cx="70" cy="70" r="70" id="tm"></circle>
+                            </svg>
+                           <div id="minutes">00<br><span>Minutes</span></div>
+                       </div>
+                       <div class="circle" style="--clr: #04fc43;">
+                           <svg>
+                               <circle cx="70" cy="70" r="70" id="ts"></circle>
+                           </svg>
+                            <div id="seconds">00<br><span>Seconds</span></div>
+                       </div>
+                </div>
+                </div>
+            
+            <div class="displaymsg  hide">
+                <h4 class="seemsg"></h4>
+                <button class="stop hide " onclick="stop()">stop</button>
+                </div>
+                <script src="timer.js" ></script>
+        
+    </body>
+   
+</html>
